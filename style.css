@@ -1,0 +1,120 @@
+html{
+	scroll-behavior: smooth;	 
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	min-height: 100vh;
+}
+.banner-area{
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("./board.png") center no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;   
+  }
+  
+  .banner-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+    color: #ffffff;
+  }
+  
+  .banner-area h1{
+    padding-top: 10%;
+    color:#ffffff;
+	font-size: 40px;
+	font-weight: 500px;
+	font-family: 'Proza Libre', sans-serif;
+  }
+  .banner-text h2 {
+    
+	  font-size: 30px;
+	  font-weight: 400;
+	  font-family: 'Lato', sans-serif;
+  }
+  .banner-text p {
+      padding-top: 2px;
+      font-family: 'Proza Libre', sans-serif;
+      color: red;
+    }
+  .btn{
+    border: 1px solid #e44608;
+    border-radius: 15px 15px;
+	background: none;
+	padding: 15px 20px;
+	font-size: 20px;
+	font-family: "montserrat";
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .btn1{
+	color: #fff;
+  }
+ 
+  .btn1:hover{
+	color:#e44608;
+  }
+  .btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background:#e44608;
+	z-index: -1;
+	transition: 0.8s;
+  }
+  .btn1::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+  }
+  
+  .btn1::before{
+	height: 180%;
+  }
+ 
+  .btn1:hover::before{
+	height: 0%;
+  }
+
+  .shadow {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .banner-area h1{
+        font-size: 30px;
+        padding-top: 60px;
+    }
+    .banner-text h2{
+        font-size: 20px;
+    }
+    .banner-text p {
+        padding-top: 10%;
+        font-size: 10px;
+    }
+  }
+
+  .custom {
+      height: 100vh;
+      background: linear-gradient(to right, #009FFF, #ec2F4B)
+  }
