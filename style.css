@@ -116,5 +116,38 @@ body{
 
   .custom {
       height: 100vh;
-      background: linear-gradient(to right, #009FFF, #ec2F4B)
+      background: linear-gradient(to right, #fc4a1a, #f7b733)
+  }
+
+  .custom h1  {
+       color: #ffffff;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       font-family: 'Vollkorn', serif;
+  }
+
+  .custom p {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .card{
+    justify-content: center;
+    position: relative;
+    background: #0e0c0cf3 !important;
+  }
+  @media only screen and (max-width: 600px) {
+     .custom h2 {
+       font-size: 23px;
+     }
+      
+     .custom h1 {
+       padding-top: 40px;
+       padding-bottom: 0px;
+     }
+
+     .custom p {
+       padding-top: 15px;
+      
+     }
+  
   }
