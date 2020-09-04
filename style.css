@@ -17,7 +17,7 @@ body{
 	min-height: 100vh;
 }
 .banner-area{
-	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("./board.png") center no-repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url("./image.jpg") center no-repeat;
 	background-size: cover;
 	background-position: center center;
 	height: 100vh;   
