@@ -22,7 +22,22 @@ body{
 	background-position: center center;
 	height: 100vh;   
   }
-  
+  #logo1{ 
+    position: absolute;; 
+    padding-top: 2px;
+    top:0; 
+    left:0; 
+    height: 100px;
+    width: 100px;
+  }  
+  #logo2{ 
+    position:absolute; 
+    padding-top: 2px;
+    top:0; 
+    right:0; 
+    height: 100px;
+    width: 100px;
+  }  
   .banner-text{
 	position: absolute;
 	top: 50%;
@@ -50,49 +65,60 @@ body{
       font-family: 'Proza Libre', sans-serif;
       color: red;
     }
-  .btn{
-    border: 1px solid #e44608;
-    border-radius: 15px 15px;
-	background: none;
-	padding: 15px 20px;
-	font-size: 20px;
-	font-family: "montserrat";
-	cursor: pointer;
-	margin: 10px;
-	transition: 0.8s;
-	position: relative;
-	overflow: hidden;
-  }
-  
-  .btn1{
-	color: #fff;
-  }
- 
-  .btn1:hover{
-	color:#e44608;
-  }
-  .btn::before{
-	content: "";
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	background:#e44608;
-	z-index: -1;
-	transition: 0.8s;
-  }
-  .btn1::before{
-	top: 0;
-	border-radius: 0 0 50% 50%;
-  }
-  
-  .btn1::before{
-	height: 180%;
-  }
- 
-  .btn1:hover::before{
-	height: 0%;
-  }
+    .btn {
+      color: #fff !important;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 45px;
+      margin: 0 0 2em;
+      max-width: 160px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+    }
+    @media (min-width: 600px) {
+      .btn {
+        margin: 0 1em 2em;
+      }
+    }
+    .btn:hover {
+      text-decoration: none;
+    }
+    
+    .btn-1 {
+      background: #e02c26;
+      font-weight: 100;
+    }
+    .btn-1 svg {
+      height: 45px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .btn-1 rect {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-dasharray: 422, 0;
+      -webkit-transition: all 0.35s linear;
+      transition: all 0.35s linear;
+    }
+    
+    .btn-1:hover {
+      background: rgba(225, 51, 45, 0);
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .btn-1:hover rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
 
   .shadow {
     -webkit-box-shadow: 0 8px 6px -6px black;
@@ -102,8 +128,8 @@ body{
 
  @media only screen and (max-width: 600px) {
     .banner-area h1{
-        font-size: 30px;
-        padding-top: 60px;
+        font-size: 27px;
+        padding-top: 70px;
     }
     .banner-text h2{
         font-size: 20px;
@@ -136,6 +162,10 @@ body{
     background: #0e0c0cf3 !important;
   }
   @media only screen and (max-width: 600px) {
+
+    .card{
+      offset: 0px !important;
+    }
      .custom h2 {
        font-size: 23px;
      }
